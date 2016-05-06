@@ -119,4 +119,11 @@ describe("full stack test", () => {
         smartMerge("So that's a text and i will change something here and here.", "So that's a text and i will change something there and here.", "So that's a text and i will change something here and somewhere else.").should.be.eql("So that's a text and i will change something there and somewhere else.");
         smartMerge('ABC', 'AC', 'DEF').should.be.eql("DF");
     });
+
+    it("should process additional positions", function() {
+        var positions = [3, 6];
+        smartMerge("Hello World", "Hello cruel World", "Hello World").should.be.eql("Hello cruel World");
+        positions.should.be.eql([3, 12]);
+    });
+
 });
