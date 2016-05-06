@@ -1,6 +1,6 @@
 {
   "name": "string-patch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An easy-to-use function to merge two concurrently changed strings.",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
       "es2015"
     ]
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/johannesspohr/string-patch/issues"
   },
   "author": "Johannes Spohr, johannes.spohr@bs-infosys.com",
